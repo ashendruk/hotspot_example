@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto+Slab" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<!-- begin centered container div -->
+<div class="centered-content">
+
+    <header>
+        <h1>Hotspot Positioning</h1>
+        <h2>Place dots over an image to create hotspot effect</h2>
+    </header>
+
+    <main role="main">
+        
+        <section>
+            <div class="image-div">
+
+                <div id="x-close" class="btn_close">
+                    <p>
+                        X
+                    </p>
+                </div>
+
+                 <div class="info_slides" id="slide">
+                    <div id="popIn">
+
+                    </div><!--Closes popIn id-->
+                    
+                </div><!--close info_slides-->
+                
+
+                <img src="images/lobby.jpg" />
+                    <div class="hotspot" id="dotA">A</div>
+                    <div class="hotspot" id="dotB">B</div>
+                <figcaption>J School lobby</figcaption>
+
+            </div>
+            
+            <p>This page has a few moving parts:
+                <ol>
+                    <li>The containing div is relatively positioned in relation to the whole web page, so it scrolls up and down as expected.</li>
+                    <li>The div contains an image, plus two smaller divs nested within it, which are the hotspots.
+                    <li>The hotspots are absolutely positioned in relation to the containing div, so they are <em>fixed</em> within it.</li>
+                    <li>Hotspots A and B each have their own unique coordinates.</li>
+                    <li>Hotspots A and B are each divs with rounded corners, so they appear as circles instead of squares</li>
+                    <li>Width dimensions are set by percentages, not pixels, for device scaling.</li>
+                </ol>
+            </p>
+        </section>
+
+
+    </main>
+
+</div><!-- end centered container div -->
+
+<!-- jquery reference line -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="main.js"></script>
+
+    
+</body>
+</html>
